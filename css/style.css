@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/************************
+    HEADER - NAVBAR
+************************/
+
+#logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+
+#rsociais{
+    align-content: right;
+    margin-left: 80%;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+    
+}
+a:hover{
+    color: darkgray;
+}
+
+/********************
+MAIN - AREA PRINCIPAL
+********************/
+
+#gradiente{
+   background: linear-gradient(white,yellow);
+    height: 100vh;
+    
+   
+}
+
+#caixaform, #caixaform2{
+   margin-top: 40px;
+   background-color: rgba(94, 89, 89, 0.363);
+   border-radius: 15px;
+   color: rgba(15, 1, 1, 0.753);
+   width: 320px;
+   height: 450px;
+   display: flex;
+   flex-wrap: wrap;
+   float: left;
+    border: 2px solid rgba(15, 1, 1, 0.753);
+    box-shadow: 20px 20px 20px 20px rgba(15, 1, 1, 0.438);
+    font-size: small;
+    
+}
+
+#caixaform2:hover{
+    box-shadow: 20px 20px 20px 20px rgba(212, 210, 210, 0.438);
+
+}
+
+#caixaform2{
+   margin-right: 5%; 
+}
+/*
+#caixaform3{
+    margin-left: 30%;
+}
+*/
+
+#caixaform, #caixaform2 #caixaform3{
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+.centralizar{
+    text-align: center;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.mt-4e{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.mt-4{
+    margin-top: 40px;
+   
+}
+
+.text-white{
+    color: white;
+}
+
+.destaque{
+    color: red;
+}
+
+fieldset{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#btn-cadastrar, #btn-matricular{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+#btn-cadastrar:hover{
+    color: black;
+    background: yellow;
+    border: 2px solid black;
+
+}
+#btn-matricular:hover{
+    color: black;
+    background: yellow;
+    border: 2px solid black;
+    
+}
+#btn-corrigir{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: red;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#btn-corrigir:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+input:hover{
+    background-color: yellow;
+    
+}
+
+input{
+    border-radius: 4px;
+    height: 25px;
+    width: 300px;
+    
+}
+input:enabled{
+    background-color: rgba(255, 255, 255, 0.884);
+}
+
+select:enabled{
+    background-color: rgba(255, 255, 255, 0.884);
+
+}
+select{
+    border-radius: 4px;
+    height: 25px;
+    width: 300px;
+}
+select:hover{
+    background-color: yellow;
+}
+/**************
+    FOOTER
+**************/
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: darkgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}

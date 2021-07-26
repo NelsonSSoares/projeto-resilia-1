@@ -1,0 +1,228 @@
+<!--Nelson de Sousa Soares-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscreva-se</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <!-- TITLE ICON-->
+    <link rel="icon" href="https://www.inscricoes.resilia.dev/wp-content/themes/resilia/media/favicon.jpeg">
+
+
+
+</head>
+<body id="gradiente">
+    <header id="logo">
+        <div>
+            <a href="https://resilia.work"><img src="https://www.inscricoes.resilia.dev/wp-content/themes/resilia/media/resilia-logo/resilia-logo.svg" alt=""></a>
+        </div>
+
+        <div id="rsociais">
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    
+ 
+        <section>
+            <div id="caixaform">
+                <div class="centralizar">
+                    <h1>Inscreva-se Já</h1>
+                    <p>
+                    </p>
+                    <div>
+                        <form class="mt-2 text-white align-left">
+                            <fieldset>
+                                <legend ><strong>Suas Informações:</legend></strong>
+                                <div class="mt-1">
+                                    <label for="nome"><strong>Nome Completo:</strong><br>
+                                        <input type="text" name="nome" id="nome" autofocus maxlength="50" placeholder="Nome" required>
+                                    </label>          
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="email"><strong>E-mail:</strong><br>
+                                        <input type="email" name="email" id="email" maxlength="50" required placeholder="seuemail@email.com">
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="cel"><strong>Celular/Whatsapp:</strong><br>
+                                        <input type="tel" maxlength="11" required placeholder="(11) 99999-9999" id="tel">
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="objetivo"><strong> Objetivo:</strong><br>
+                                        <select name="objetivo" id="objetivo">
+                                            <option value=" ">Selecione Opção</option>
+                                            <option value="1">Conseguir um Emprego</option>
+                                            <option value="2">Mudaar de Carreira</option>
+                                            <option value="3">Aprender Programação</option>
+                                            <option value="4">Aprender Soft-Skills</option>
+                                            <option value="5">Conhecer Profissionais</option>
+                                            <option value="6">Ter Mentoria Profissional</option>
+                                            <option value="7">Acesso a Comunidade</option>
+                                            <option value="8">Outros</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="conhece"><strong>Como Conheçeu a Resilia?</strong><br>
+                                        <select name="conhece" id="conhece">
+                                            <option value=" ">--</option>
+                                            <option value="a">Facebook/Instragram</option>
+                                            <option value="b">Anuncio do Google</option>
+                                            <option value="c">Por alguma Empresa</option>
+                                            <option value="d">Imprensa</option>
+                                            <option value="e">Indicação de Amigos</option>
+                                            <option value="f">Panfleto</option>
+                                            <option value="g">Pessquisa do Google</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="politica"><strong>Concorda com as <a href="https://resilia.work">Politicas de Privacidade?</a></strong><br>
+                                        <select name="politica" id="politica">
+                                            <option value="">--</option>
+                                            <option value="s">Sim</option>
+                                            <option value="n">Não</option>
+                                        </select>
+                                    </label>
+                                    <h3 id="aviso"></h3>
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+                        <div class="mt-2">
+                            <button type="submit" id="btn-cadastrar" onclick="cadastrar()"><strong>Confirmar</strong></button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div id="caixaform2">
+                <div class="centralizar">
+                    <h1>Confirme suas Informações :)</h1>
+                    
+                    <div>
+                        <form class="mt-1 text-white align-left">
+                            <fieldset>
+                                <legend ><strong>Confirmar Informações:</strong></legend>
+                                <div class="mt-1">
+                                    <label for="dnome"><strong>Nome Completo:</strong><br>
+                                        <input type="text" disabled id="dnome">
+                                    </label>          
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="demail"><strong>E-mail:</strong><br>
+                                        <input type="text" disabled id="demail" name="demail">
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="dtel"><strong>Celular/Whatsapp:</strong><br>
+                                        <input type="text" disabled id="dtel" name="dtel">
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="dobj"><strong>Objetivo:</strong><br>
+                                        <input type="text" disabled id="dobj" name="dobj">
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="conhecer"><strong>Como Conheçeu a Resilia?</strong><br>
+                                        <input type="text" disabled id="conhecer">
+                                    </label>
+                                </div>
+
+                                <div class="mt-1">
+                                    <label for="politica"><strong>Concorda com as <a href="https://resilia.work">Politicas de Privacidade?</a></strong><br>
+                                        <input type="text" disabled id="politic">
+                                    </label>
+                                    
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+                        <div class="mt-2">
+                            <button id="btn-matricular"  onclick="confirmar()"><strong>Matricular</strong></button>
+                            <button id="btn-corrigir"  onclick="corrigir()"><strong>Corrigir</strong></button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="caixaform3" class="mt-4" >
+                <h1 id="titulo">Matricule-se Já!!</h1>
+                <p ><h3 id="texto">O Mercado está buscando pessoas desenvolvedoras,
+                    e você pode preencher essas vagas!</h3>
+
+                </p>
+                <br>
+                <br>
+                <p  style="margin-left: 20px;"><h4 id="texto2">Em 6 meses, aprenda programação DE VERDADE
+                    de forma mais rápida e acessível para começar a
+                    trabalhar com tecnologia.</h4><br>
+
+                <h3>Aqui você irá Aprender:</h3>
+                <h5><ul style="margin-right: 10px;">
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                        <li>React</li>
+                        <li>Rest API</li>
+                        <li>Metodologias ágeis</li>
+                    </ul>
+                </p></h5>
+                
+                
+            </div>
+        </section>
+
+        
+
+   
+    <footer>
+        <div class="mt-4e">
+            <a href="https://resilia.work"><img src="https://www.inscricoes.resilia.dev/wp-content/themes/resilia/media/resilia-logo/resilia-logo.svg" alt=""></a>
+        </div>
+
+        <div class="mt-4 text-white">
+            <h6>Todos os direitos reservados © 2021 Resilia
+            </h6>
+        </div>
+
+        <div id="rsociais2" class="text-white mt-4" id="footer">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer">
+
+     <!-- JS LINK-->
+     <script src="js/index.js"></script>
+</body>
+</html>
