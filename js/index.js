@@ -56,7 +56,12 @@ function cadastrar(){
     }
     let politica = document.getElementById('politica').value
 
-    if(politica ==='s'){
+    if(nome == '' || email == '' || tel == '' || objetivo == '' || conhecer == ''){
+        document.getElementById('aviso').innerHTML = 'Você precisa preencher todos os campos!'
+        document.getElementById('aviso').style.color = 'red'
+        document.getElementById('aviso').style.marginBottom = '-15px'
+        document.getElementById('aviso').style.textDecoration = 'underline'
+    }else if(politica ==='s'){
 
         document.getElementById('dnome').value = nome
         document.getElementById('demail').value = email
@@ -64,6 +69,7 @@ function cadastrar(){
         document.getElementById('dobj').value = objetivo
         document.getElementById('conhecer').value = conhecer
         document.getElementById('politic').value = 'Sim'
+        document.getElementById('aviso').innerHTML = ''
         
     }else if(politica === 'n' || '--' || ''){
         document.getElementById('aviso').innerHTML = 'Você precisa aceitar os termos'
